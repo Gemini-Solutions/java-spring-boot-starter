@@ -1,0 +1,29 @@
+#spring:
+#  jpa:
+#    database-platform: org.hibernate.dialect.PostgreSQL9Dialect
+#    generate-ddl: true
+#    show-sql: true
+#    hibernate:
+#      default_schema: public
+#      ddl-auto: update
+#    properties:
+#      hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
+#  datasource.:
+#    driver-class-name: org.postgresql.Driver
+#    url: jdbc:postgresql://://localhost:5432/basic_db
+#    username: ${DB_USER}
+#    password: ${DB_PASSWORD}
+#
+#server:
+#  port: 8080
+#
+#springdoc:
+#  swagger-ui:
+#    oauth2RedirectUrl: http://localhost:8080/swagger-ui/oauth2-redirect.html
+#    oauth:
+#      clientId: #client id
+#      use-pkce-with-authorization-code-grant: true
+#      scopes:
+#        - openid
+#        - profile
+#        - email
