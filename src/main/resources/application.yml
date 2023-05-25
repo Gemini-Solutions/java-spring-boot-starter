@@ -1,4 +1,5 @@
 #spring:
+## ------------- Database configuration, to be update accordingly --------------
 #  jpa:
 #    database-platform: org.hibernate.dialect.PostgreSQL9Dialect
 #    generate-ddl: true
@@ -10,13 +11,14 @@
 #      hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
 #  datasource.:
 #    driver-class-name: org.postgresql.Driver
-#    url: jdbc:postgresql://://localhost:5432/basic_db
+#    url: jdbc:postgresql://://localhost:5432/<database-name>
 #    username: ${DB_USER}
 #    password: ${DB_PASSWORD}
 #
-#server:
-#  port: 8080
-#
+server:
+  port: 8080
+
+# ------------ Swagger ui Authentication, to be used with spring and swagger security ---------------
 #springdoc:
 #  swagger-ui:
 #    oauth2RedirectUrl: http://localhost:8080/swagger-ui/oauth2-redirect.html
