@@ -14,18 +14,6 @@
 #    url: jdbc:postgresql://://localhost:5432/<database-name>
 #    username: ${DB_USER}
 #    password: ${DB_PASSWORD}
-#
+
 server:
   port: 8080
-
-# ------------ Swagger ui Authentication, to be used with spring and swagger security ---------------
-#springdoc:
-#  swagger-ui:
-#    oauth2RedirectUrl: http://localhost:8080/swagger-ui/oauth2-redirect.html
-#    oauth:
-#      clientId: #client id
-#      use-pkce-with-authorization-code-grant: true
-#      scopes:
-#        - openid
-#        - profile
-#        - email

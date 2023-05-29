@@ -1,21 +1,23 @@
 package com.gemini.service;
 
+import com.gemini.dao.EmployeeDao;
 import com.gemini.entities.Employee;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Service
 public class BasicService {
-    private List<Employee> employees = new ArrayList<>();
+    @Autowired
+    private EmployeeDao employeeDao;
 
     /**
      * Get all employees return the employees list
      * @return
      */
     public List<Employee> getAllEmployees() {
-        return employees;
+        return employeeDao.findAll();
     }
 
     /**
@@ -24,7 +26,7 @@ public class BasicService {
      * @return
      */
     public Employee getEmployee(final int employeeId) {
-        return employees.stream().filter(emp -> emp.getId() == employeeId).findFirst().orElseThrow(
+        return employeeDao.findById(employeeId).orElseThrow(
                 () -> new IllegalArgumentException("Employee Id: " + employeeId + " not found")
         );
     }
@@ -34,6 +36,6 @@ public class BasicService {
      * @param employee
      */
     public void saveEmployee(final Employee employee) {
-        employees.add(employee);
+        employeeDao.save(employee);
     }
 }
