@@ -1,0 +1,40 @@
+# Compiled class file
+*.class
+
+# Log files
+log/
+*.log
+
+# IntelliJ IDEA files
+.idea/
+*.iml
+out/
+
+# Eclipse files
+.classpath
+.project
+.settings/
+.metadata/
+bin/
+
+# Maven files
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/wrapper/maven-wrapper.jar
+!.mvn/wrapper/maven-wrapper.properties
+
+# Gradle files
+.gradle/
+build/
+
+# Spring Boot DevTools
+.restart
+
+# Spring Boot generated files
+spring-boot-*.properties
