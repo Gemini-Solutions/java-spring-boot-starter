@@ -22,7 +22,6 @@
         <java.version>11</java.version>
         <jakartaValidationApi.version>2.0.1</jakartaValidationApi.version>
         <junit.jupiter.version>5.8.1</junit.jupiter.version>
-        <junit.platform.version>1.8.1</junit.platform.version>
 
         <plugin.checkstyle.version>3.3.0</plugin.checkstyle.version>
         <plugin.spotbugs.version>4.5.2.0</plugin.spotbugs.version>
@@ -59,28 +58,22 @@
         </dependency>
 
         <!--JUnit testing dependencies-->
+
+        <!-- JUnit 4 -->
+        <!--
         <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-engine</artifactId>
-            <version>${junit.jupiter.version}</version>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.2</version>
             <scope>test</scope>
         </dependency>
+        -->
+
+        <!-- JUnit 5 -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
             <version>${junit.jupiter.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-params</artifactId>
-            <version>${junit.jupiter.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.junit.platform</groupId>
-            <artifactId>junit-platform-suite</artifactId>
-            <version>${junit.platform.version}</version>
             <scope>test</scope>
         </dependency>
 
